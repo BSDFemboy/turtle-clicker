@@ -1,0 +1,34 @@
+{
+    "turtles": 0,
+    "turtlesReached": 0,
+    "clickincome": 0,
+    "multiplier": 1,
+    "globalincome": 0,
+    "turtletype": "default",
+    "intervalTime": 1000,
+
+    "items": {
+        "count": [
+            0,
+            0
+        ],
+        "cost": [
+            15,
+            45
+        ],
+        "income": [
+            1,
+            0
+        ],
+        "multiplier": [
+            0,
+            1
+        ]
+    },
+
+    "upgrades": {
+        "purchased": [
+            false
+        ]
+    }
+}

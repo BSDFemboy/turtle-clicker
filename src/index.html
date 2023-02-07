@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>0 - Turtle Clicker</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="turtle-area">
+      <div class="stat-holder">
+        <p>Turtles: <span class="green" id="clicks">0</span></p>
+        <p>Multiplier: <span id="multiplier">1</span></p>
+        <p>Per Second: <span id="clicks-per-sec">1</span></p>
+      </div>
+      <img id="turtleimg" src="img/turtle.png" onclick="game.addTurtles(1)"/>
+    </div>
+    <div class="rest-bar">
+      <h1>MENU</h1>
+      <hr/>
+      <div class="settings" id="setngs">
+        <button id="loadstats">Import Save File</button>
+        <button id="killstats">Reset Stats</button>
+        <br/>
+        <button id="donate" onclick="openPay()">Support the developer❤️</button>
+      </div>
+      <hr id="sethr"/>
+      <div class="itemlist">
+        <h2>UPGRADES:</h2>
+        <div class="items" id="upgradeshop">
+        </div>
+        <h2>ITEMS:</h2>
+        <div class="items" id="itemshop">
+          </button>
+        </div>
+      </div>
+    </div>
+    <script defer src="./clicker.js"></script>
+    <script defer src="./donate.js"></script>
+  </body>
+</html>

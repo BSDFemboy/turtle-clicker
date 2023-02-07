@@ -1,0 +1,158 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: 0;
+  -webkit-user-select: none;      
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  text-align: center;
+  background: lightblue;
+}
+
+#turtleimg {
+  max-width: 20%;
+  max-height: 20%;
+  cursor: pointer;
+  animation: float 6s ease-in-out infinite;
+  transition: ease-out 300ms;
+}
+
+#turtleimg:hover {
+  max-height: 20.6%;
+  max-width: 20.6%;
+}
+
+#turtleimg:active {
+  max-height: 21%;
+  max-width: 21%;
+}
+
+.turtle-area {
+  width: 100%;
+  background: lightblue;
+}
+
+.rest-bar {
+  width: 100%;
+  background: green /* url(img/grassy.webp) */ repeat;
+  color: white;
+  font-weight: bold;
+  border-top: black 3px solid;
+  position: absolute;
+}
+
+.settings {
+  background: darkslategray;
+  padding: 3px 4px 3px 4px;
+  display: none;
+}
+
+#sethr {
+  color: white;
+  display: none;
+}
+
+.stat-holder {
+  font-weight: bolder;
+}
+
+button {
+  background-color: #4e3e1a;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 750ms;
+  margin-bottom: 3px;
+}
+
+button:hover {
+  background-color: #3a2e13;
+  padding: 17px 34px;
+}
+
+.purbutton {
+  background-color: #3f3214;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 750ms;
+  margin-bottom: 3px;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgbutton {
+  background-color: #3f3214;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 750ms;
+  margin-bottom: 3px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.purbutton .costos {
+  margin-left: 20px;
+}
+
+#donate {
+  background-color: rgb(177, 0, 0);
+  animation: heartbeat 1s infinite ease-in-out;
+}
+
+#donate:hover {
+  background-color: red;
+}
+
+.itemlist {
+  background-color: #463819;
+  border: 2px black solid;
+}
+
+.green {
+  color: rgb(109, 165, 24);
+}
+
+@keyframes heartbeat {
+  0% {
+    padding: 15px 32px;
+  }
+  50% {
+    padding: 17px 34px;
+  }
+  100% {
+    padding: 15px 32px;
+  }
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

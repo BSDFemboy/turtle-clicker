@@ -1,0 +1,62 @@
+{
+  "name": "turtle-clicker",
+  "productName": "turtle-clicker",
+  "version": "1.0.0",
+  "description": "Fun clicker game.",
+  "main": "src/index.js",
+  "config": {
+    "forge": {
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "options": {
+              "icon": "./logo"
+            }
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": ["linux"]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {
+            "options": {
+              "icon": "./logo"
+            }
+          }
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {
+            "options": {
+              "icon": "./logo"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": "Avity",
+  "license": "GPLv3",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "22.2.0"
+  }
+}
